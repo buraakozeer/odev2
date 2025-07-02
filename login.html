@@ -4,28 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giriş Yap</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Giriş Yap</h1>
-    
-    <form>
-        <label for="email">E-posta:</label>
-        <input type="email" id="email" name="email" placeholder="E-posta adresinizi girin" required>
-        <br><br>
-        
-        <label for="password">Şifre:</label>
-        <input type="password" id="password" name="password" placeholder="Şifrenizi girin" required>
-        <br><br>
-        
-        <input type="checkbox" id="remember" name="remember">
-        <label for="remember">Beni Hatırla</label>
-        <br><br>
-        
-        <button type="submit">Giriş Yap</button>
-    </form>
-    
-    <br>
-    
-    <p>Hesabın yok mu? <a href="signup.html">Hemen Kayıt Ol</a></p>
+    <div class="form-container">
+        <h1>Giriş Yap</h1>
+        <form>
+            <div class="form-group">
+                <input type="email" placeholder="E-posta adresiniz" required>
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Şifreniz" required>
+            </div>
+            <button type="submit">Giriş Yap</button>
+        </form>
+        <p style="text-align: center; margin-top: 15px;">
+            Hesabın yok mu? <a href="signup.html">Kayıt Ol</a>
+        </p>
+    </div>
 </body>
 </html> 
